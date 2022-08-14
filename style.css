@@ -1,0 +1,49 @@
+/* not visited */
+a:link {
+  color: red;
+}
+
+input:required {
+  background-color: lightblue;
+}
+
+input:placeholder-shown {
+  background-color: aqua;
+}
+
+input:valid {
+  color: orange;
+}
+
+input:invalid {
+  border: none;
+  outline: 2px solid red;
+  border-radius: 5px;
+  background-color: aqua;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 1em;
+}
+
+input {
+  border: 1px solid black;
+}
+
+input:in-range {
+  background-color: lightblue;
+}
+
+input:out-of-range {
+  background-color: rgba(255, 0, 0, 0.25);
+  border: 1px solid red;
+}
+
+input:in-range + label::after {
+  content: "okay.";
+}
+
+input:out-of-range + label::after {
+  content: "out of range!";
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Classes</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Iput Pseudo-Classes</h1>
+
+    <h2>Pseudo-Classes styling</h2>
+
+    <hr />
+
+    <br />
+
+    <a href="https://youtube.com">Go to YT</a>(*:link in CSS) <br /><br />
+
+    <hr />
+
+    <h2>:placeholder-shown</h2>
+    <input type="text" placeholder="Enter Name" />(*:placeholder-shown attribute
+    represents any 'input' or other 'form' element that is currently displaying
+    a 'placeholder' text.)(*'placeholder-shown' in CSS changes all 'input'
+    elements on this page w/a 'placeholder' attribute to background-color:
+    aqua;.)
+    <br />
+    <input type="text" />(*No 'placeholder' attribute.)(*The typing is orange
+    due to the color: orange; in :valid in CSS.)
+
+    <h2>:disabled</h2>
+    <input type="text" placeholder="Enter Name" disabled />(*This element is
+    disabled and represents any disabled 'input' or other 'form' element.)(*The
+    'disabled' attribute is in the index file only, not CSS.)
+    <br />
+    <input type="text" placeholder="Enter Email" />(*This element is not
+    disabled, background-color: aqua; is a result of the 'placeholder'
+    attribute.)
+
+    <h2>:read-only</h2>
+    <input type="text" placeholder="Enter Name" readonly />(*:read-only
+    represents an element that is not editable by the user.)(*The 'readonly'
+    attribute is in the index file only, not CSS.)
+    <br />
+    <input type="text" />(*No 'placeholder' attribute.)
+
+    <h2>:required</h2>
+    <input type="text" placeholder="Enter Name" required />(*This 'input' is in
+    an invalid state.)(*This pseudo-class is useful for highlighting fields that
+    must have valid data before a form can be submitted.)(*The 'required'
+    attribute in this 'input' element causes background-color: lightblue; when
+    the state becomes valid, red border-color otherwise.)
+    <br />
+    <input type="text" placeholder="Enter Email" />(*No 'required' attribute in
+    this 'input' element. The background-color: aqua; is a result of the
+    'placeholder' attribute.)
+
+    <h2>:valid</h2>
+    <input type="text" placeholder="Enter Name" required />(*This 'input' is in
+    an invalid state.)(*:valid represents any 'input' or other 'form' element
+    whose contents validate successfully.)(*The color: orange; in ':valid' in
+    CSS affects all the 'input' and 'form' elements on this page with orange
+    typing automatically.)(*:valid works with the 'required' attribute.)
+    <br />
+    <input type="text" />(*No 'placeholder' attribute.)
+
+    <br /><br />
+
+    <h2>:invalid</h2>
+    <form>
+      <!-- <label for="email">Email Address:</label> -->
+      <input
+        name="email"
+        type="email"
+        required
+        value="name@example.com"
+      />(*This 'input' is in a valid state.)(*:invalid represents any 'form',
+      'fieldset', 'input' or other 'form' element whose content fails to
+      validate.)(*:invalid works with the 'required' attribute.)(*Any 'input' or
+      other 'form' element on this page whose contents are invalid display a red
+      border-color.)
+    </form>
+
+    <br /><br />
+
+    <h2>:in-range / :out-of-range</h2>
+    <form action="" id="form1">
+      <ul>
+        Values between 1 and 10 are valid.
+        <li>
+          <input
+            id="value1"
+            name="value1"
+            type="number"
+            placeholder="1 to 15"
+            min="1"
+            max="10"
+            value="15"
+            required
+          />
+          <label for="value1">Your value is </label>
+        </li>
+        (*:in-range represents an element whose current value is within the
+        range limits specified by the 'min' and 'max' attributes.)
+      </ul>
+    </form>
+
+    <br /><br />
+
+    <hr />
+
+    <div>Lorem ipsum dolor sit amet.</div>
+
+    <hr />
+  </body>
+</html>
