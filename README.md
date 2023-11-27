@@ -1,1 +1,3 @@
-# review_course_work_pseudo_classes
+Input pseudo-classes reference sheet:
+
+Way down that rabbit hole...
